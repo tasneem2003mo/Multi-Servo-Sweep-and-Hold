@@ -25,11 +25,11 @@ https://github.com/tasneem2003mo/Servo-Sweep/blob/main/Servo%20simulation.mp4
 ## 🔌 Hardware Connections
 * **Servo 1 (Far Left):** Signal Pin $\rightarrow$ **D3**
 * **Servo 2:** Signal Pin $\rightarrow$ **D5**
-* **Servo 3:** Signal Pin $\rightarrow$ **D9**
+* **Servo 3:** Signal Pin $\rightarrow$ **D6**
 * **Servo 4 (Far Right):** Signal Pin $\rightarrow$ **D10**
 * **Common Rails:** 
-  * All brown lines $\rightarrow$ breadboard negative $(-)$ rail connected to Arduino **GND**.
-  * All red lines $\rightarrow$ breadboard positive $(+)$ rail connected to Arduino **5V**.
+  * All brown lines $\rightarrow$ breadboard negative (-) rail connected to Arduino **GND**.
+  * All red lines $\rightarrow$ breadboard positive (+) rail connected to Arduino **5V**.
 
 ---
 
@@ -51,7 +51,7 @@ bool timeElapsed = false;
 void setup() {
   servo1.attach(3);
   servo2.attach(5);
-  servo3.attach(9);
+  servo3.attach(6);
   servo4.attach(10); 
   
   startTime = millis();
